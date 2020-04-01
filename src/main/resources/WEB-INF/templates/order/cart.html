@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>农产品购物商城 -- 购物车</title>
+    <link rel="stylesheet" th:href="@{|${static}/css/gouwuche.css|}">
+</head>
+<body>
+<header class="aui-navBar aui-navBar-fixed">
+    <div class="aui-center">
+        <div class="aui-search-box">
+            <i class="icon icon-search"></i>
+            <input type="text" placeholder="搜索商品名称">
+        </div>
+    </div>
+</header>
+
+<div id="gouwuche">
+    <div class="quanxuan">
+        <div class="s1">
+            <input type="checkbox" name="" id="allCheckBox">&nbsp;&nbsp;&nbsp;全选
+        </div>
+        <div class="s2">
+            合计：￥<span id="totalMoney">0</span>
+        </div>
+    </div>
+    <ul class="zizixixi">
+        <li class="goodsBox">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img th:src="@{|${static}/img/shucai3.jpg|}" alt="商品">
+            </div>
+            <div class="s5">
+                <div class="title">优质蔬菜混合大甩卖，优惠多的数不过来！</div>
+                <div>
+                    ￥<span class="price">13.99</span>
+                    <span class="market-price">￥29.99</span>
+                </div>
+            </div>
+            <div class="s6">
+                <input class="btnReduce" type="button" value="－"/>
+                <input class="count" type="text" value="2"
+                       style="width:20px;font-size:16px;border: 0;text-align: center;">
+                <input class="btnAdd" type="button" value="＋"/>
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="s71" onclick="deleteStu(this)"/>
+            </div>
+        </li>
+        <li class="goodsBox">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img th:src="@{|${static}/img/shucai1.jpg|}" alt="商品">
+            </div>
+            <div class="s5">
+                <div class="title">上等油菜，纯天然无公害绿色食品</div>
+                <div>
+                    ￥<span class="price">13.65</span>
+                    <span class="market-price">￥9.99</span>
+                </div>
+            </div>
+            <div class="s6">
+                <input class="btnReduce" type="button" value="－"/>
+                <input class="count" type="text" value="4"
+                       style="width:20px;font-size:16px;border: 0;text-align: center;">
+                <input class="btnAdd" type="button" value="＋"/>
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="s71" onclick="deleteStu(this)"/>
+            </div>
+        </li>
+        <li class="goodsBox">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img th:src="@{|${static}/img/shuguo3.jpg|}" alt="商品">
+            </div>
+            <div class="s5">
+                <div class="title">天然无公害水果美味可口草莓（送小篮子）1000g！</div>
+                <div>
+                    ￥<span class="price">16.98</span>
+                    <span class="market-price">￥8.63</span>
+                </div>
+            </div>
+            <div class="s6">
+                <input class="btnReduce" type="button" value="－"/>
+                <input class="count" type="text" value="6"
+                       style="width:20px;font-size:16px;border: 0;text-align: center;">
+                <input class="btnAdd" type="button" value="＋"/>
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="s71" onclick="deleteStu(this)"/>
+            </div>
+        </li>
+        <li class="goodsBox">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img th:src="@{|${static}/img/rou3.jpg|}" alt="商品">
+            </div>
+            <div class="s5">
+                <div class="title">上等猪肉，上等猪油，上等猪头肉，上等猪肘子肉3000g！</div>
+                <div>
+                    ￥<span class="price">99.99</span>
+                    <span class="market-price">￥179.99</span>
+                </div>
+            </div>
+            <div class="s6">
+                <input class="btnReduce" type="button" value="－"/>
+                <input class="count" type="text" value="1"
+                       style="width:20px;font-size:16px;border: 0;text-align: center;">
+                <input class="btnAdd" type="button" value="＋"/>
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="s71" onclick="deleteStu(this)"/>
+            </div>
+        </li>
+        <li class="goodsBox">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img th:src="@{|${static}/img/nai3.jpg|}" alt="商品">
+            </div>
+            <div class="s5">
+                <div class="title">优质学生奶（12个装）</div>
+                <div>
+                    ￥<span class="price">15.99</span>
+                    <span class="market-price">￥26.50</span>
+                </div>
+            </div>
+            <div class="s6">
+                <input class="btnReduce" type="button" value="－"/>
+                <input class="count" type="text" value="9"
+                       style="width:20px;font-size:16px;border: 0;text-align: center;">
+                <input class="btnAdd" type="button" value="＋"/>
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="s71" onclick="deleteStu(this)"/>
+            </div>
+        </li>
+        <li class="goodsBox">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img th:src="@{|${static}/img/dan2.jpg|}" alt="商品">
+            </div>
+            <div class="s5">
+                <div class="title">精致菜品，鸡蛋稻花刀花</div>
+                <div>
+                    ￥<span class="price">29.99</span>
+                    <span class="market-price">￥36.50</span>
+                </div>
+            </div>
+            <div class="s6">
+                <input class="btnReduce" type="button" value="－"/>
+                <input class="count" type="text" value="5"
+                       style="width:20px;font-size:16px;border: 0;text-align: center;">
+                <input class="btnAdd" type="button" value="＋"/>
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="s71" onclick="deleteStu(this)"/>
+            </div>
+        </li>
+    </ul>
+</div>
+<footer>
+    <a th:href="@{/}"><img th:src="@{|${static}/img/spy-5.jpg|}" alt=""><span>首页</span></a>
+    <a th:href="@{/category}"><img th:src="@{|${static}/img/q3.png|}" alt=""><span>分类</span></a>
+    <a th:href="@{/cart}"><img th:src="@{|${static}/img/gouwuche.png|}" alt=""><span>购物车</span></a>
+    <a th:href="@{/homestay}"><img th:src="@{|${static}/img/q1.png|}" alt=""><span>特色民宿</span></a>
+    <a th:href="@{/mine}"><img th:src="@{|${static}/img/q5.png|}" alt=""><span>我的</span></a>
+</footer>
+
+</body>
+<script th:src="@{|${static}/js/jquery-1.8.3.min.js|}"></script>
+<script th:src="@{|${static}/js/gouwuche.js|}"></script>
+</html>
+

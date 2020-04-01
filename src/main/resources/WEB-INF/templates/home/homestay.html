@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>农产品购物商城 -- 特色民宿</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link th:href="@{|${static}/css/teseminsu.css|}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" th:src="@{|${static}/js/jquery.min.js|}"></script>
+    <script type="text/javascript" th:src="@{|${static}/js/teseminsu.js|}"></script>
+</head>
+<body>
+<section class="aui-flexView">
+    <section class="aui-scrollView">
+        <div class="aui-find-header">
+            <h1>各种民宿供你选择</h1>
+        </div>
+        <div class="m-slider" data-ydui-slider>
+            <div class="slider-wrapper">
+                <div class="slider-item">
+                    <a href="javascript:;">
+                        <img th:src="@{|${static}/img/banner-001.jpg|}">
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="javascript:;">
+                        <img th:src="@{|${static}/img/banner-002.jpg|}">
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="javascript:;">
+                        <img th:src="@{|${static}/img/banner-003.jpg|}">
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="javascript:;">
+                        <img th:src="@{|${static}/img/mingsu2.jpg|}">
+                    </a>
+                </div>
+            </div>
+            <div class="slider-pagination"></div>
+        </div>
+        <div class="aui-find-header">
+            <h1>城市探索</h1>
+        </div>
+        <div class="aui-slide-list">
+            <ul class="aui-slide-item-list">
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-001.jpg|}" alt="">
+                    </a>
+                    <h3>北京</h3>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-002.jpg|}" alt="">
+                    </a>
+                    <h3>上海</h3>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-003.jpg|}" alt="">
+                    </a>
+                    <h3>广州</h3>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-004.jpg|}" alt="">
+                    </a>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-001.jpg|}" alt="">
+                    </a>
+                    <h3>成都</h3>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-001.jpg|}" alt="">
+                    </a>
+                    <h3>厦门</h3>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-002.jpg|}" alt="">
+                    </a>
+                    <h3>西安</h3>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-003.jpg|}" alt="">
+                    </a>
+                    <h3>青岛</h3>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-004.jpg|}" alt="">
+                    </a>
+                </li>
+                <li class="aui-slide-item-item">
+                    <a href="javascript:;" class="aui-link">
+                        <img th:src="@{|${static}/img/ad-001.jpg|}" alt="">
+                    </a>
+                    <h3>成都</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="aui-find-header">
+            <h1>精选推荐</h1>
+        </div>
+        <div class="aui-coll-list">
+            <div class="aui-city-list">
+                <div class="aui-city-item">
+                    <img th:src="@{|${static}/img/fid-001.png|}" alt="">
+                    <span class="aui-city-tag"><img th:src="@{|${static}/img/icon-hot-find.png|}" alt=""></span>
+                </div>
+                <div class="aui-city-text">
+                    <h2>这些是老旧的品牌家具店一个比一个美丽</h2>
+                    <p class="aui-grt">本土也有好的设计</p>
+                    <p>##上海</p>
+                </div>
+            </div>
+            <div class="aui-city-list">
+                <div class="aui-city-item">
+                    <img th:src="@{|${static}/img/mingsu1.jpg|}" alt="">
+                    <span class="aui-city-tag"><img th:src="@{|${static}/img/icon-hot-find.png|}" alt=""></span>
+                </div>
+                <div class="aui-city-text">
+                    <h2>优美的环境，宛如造物主最完美的杰作</h2>
+                    <p class="aui-grt">好的设计来自于生活</p>
+                    <p>##河南</p>
+                </div>
+            </div>
+            <div class="aui-city-list">
+                <div class="aui-city-item">
+                    <img th:src="@{|${static}/img/mingsu3.jpg|}" alt="">
+                    <span class="aui-city-tag"><img th:src="@{|${static}/img/icon-hot-find.png|}" alt=""></span>
+                </div>
+                <div class="aui-city-text">
+                    <h2>恬静的乡间小道，安静，舒适</h2>
+                    <p class="aui-grt">大自然的鬼斧神工</p>
+                    <p>##兰州</p>
+                </div>
+            </div>
+            <div class="aui-city-list">
+                <div class="aui-city-item">
+                    <img th:src="@{|${static}/img/mingsu4.jpg|}" alt="">
+                    <span class="aui-city-tag"><img th:src="@{|${static}/img/icon-hot-find.png|}" alt=""></span>
+                </div>
+                <div class="aui-city-text">
+                    <h2>舒适便捷便宜的酒店，平价住宿</h2>
+                    <p class="aui-grt">平价住宿优惠多多</p>
+                    <p>##西安</p>
+                </div>
+            </div>
+            <div class="aui-city-list">
+                <div class="aui-city-item">
+                    <img th:src="@{|${static}/img/mingsu2.jpg|}" alt="">
+                    <span class="aui-city-tag"><img th:src="@{|${static}/img/icon-hot-find.png|}" alt=""></span>
+                </div>
+                <div class="aui-city-text">
+                    <h2>桂林山水甲天下，最美还是在我家</h2>
+                    <p class="aui-grt">如家一般的感觉</p>
+                    <p>##桂林</p>
+                </div>
+            </div>
+            <div class="aui-city-list">
+                <div class="aui-city-item">
+                    <img th:src="@{|${static}/img/mingsu5.jpg|}" alt="">
+                    <span class="aui-city-tag"><img th:src="@{|${static}/img/icon-hot-find.png|}" alt=""></span>
+                </div>
+                <div class="aui-city-text">
+                    <h2>这间乡间民宿带火了差点遭废弃的村庄</h2>
+                    <p class="aui-grt">广西的好设计</p>
+                    <p>##广西</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="aui-footer aui-footer-fixed">
+        <a th:href="@{/}" class="aui-tabBar-item">
+                        <span class="aui-tabBar-item-icon">
+                            <i class="icon icon-loan"><img th:src="@{|${static}/img/spy-5.jpg|}" alt="" style="width:
+                            20px;height: 20px;"></i>
+                        </span>
+            <span class="aui-tabBar-item-text">首页</span>
+        </a>
+        <a th:href="@{/category}" class="aui-tabBar-item ">
+                        <span class="aui-tabBar-item-icon">
+                            <i class="icon icon-credit"><img th:src="@{|${static}/img/q3.png|}" alt="" style="width:
+                            20px;height: 20px;"></i>
+                        </span>
+            <span class="aui-tabBar-item-text">分类</span>
+        </a>
+        <a th:href="@{/cart}" class="aui-tabBar-item ">
+                        <span class="aui-tabBar-item-icon">
+                            <i class="icon icon-ions"><img th:src="@{|${static}/img/q4.png|}" alt=""
+                                                           style="width: 20px;height: 20px;"></i>
+                        </span>
+            <span class="aui-tabBar-item-text">购物车</span>
+        </a>
+        <a th:href="@{/homestay}" class="aui-tabBar-item  aui-tabBar-item-active ">
+                        <span class="aui-tabBar-item-icon">
+                            <i class="icon icon-info"><img th:src="@{|${static}/img/minsu.png|}" alt="" style="width:
+                            20px;height: 20px;"></i>
+                        </span>
+            <span class="aui-tabBar-item-text">特色民宿</span>
+        </a>
+        <a th:href="@{/mine}" class="aui-tabBar-item ">
+                        <span class="aui-tabBar-item-icon">
+                            <i class="icon icon-mine"><img th:src="@{|${static}/img/q5.png|}" alt=""
+                                                           style="width: 20px;height: 20px;"></i>
+                        </span>
+            <span class="aui-tabBar-item-text">我的</span>
+        </a>
+    </footer>
+
+</section>
+
+</body>
+</html>

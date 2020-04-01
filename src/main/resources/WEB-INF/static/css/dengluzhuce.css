@@ -1,0 +1,158 @@
+body{
+	background: #f2f2f2;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.houjia p{
+    font-weight: 900;
+    font-size: 20px;
+    color: red;
+    line-height: 80px;
+    margin-left: 35%;
+    text-align: left;
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.denglu{
+	width: 96%;
+	margin: 0 auto;
+	background: #909090;
+	overflow: hidden;
+	padding-bottom: 1rem;
+	border-radius: 10px;
+}
+
+.biaotou{
+	width: 96%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+}
+
+.biaonei{
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 3rem;
+	color:#333;
+	padding: 1.5rem 2rem 1rem;
+}
+
+.kuangkuang{
+	width: 100%;
+	height: 2rem;
+	font-size: 18px;
+	font-weight: 600;
+	text-indent: 1rem;
+}
+
+.beg-pull-left{
+	font-size: 18px;
+	float: left;
+	margin-left: 5%;
+	margin-right: 20%;
+}
+
+.beg-pull-right{
+	font-size: 18px;
+	float: right;
+	margin-right: 5%;
+}
+
+.zuixia input{
+	width: 6rem;
+	height: 2.5rem;
+	background: yellow;
+	opacity: 0.7;
+	border: 0;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+.q1{
+	float: left;
+	margin-left: 15%;
+} 
+
+.q2{
+	float: right;
+	margin-right: 15%;
+}
+
+.zhushi{
+    width: 94%;
+    margin: 0 auto;
+    background-color: #c4ad8e;
+    border-radius: 10px;
+}
+
+.zhushi p{
+    font-family: 楷体;
+    font-size: 16px;
+    margin-top: 2rem;
+    text-indent: 32px;
+    padding: 12px 5px;
+}
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 7px 5px 7px 5px;
+    background: #fafafa;
+}
+footer a{
+     -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #979797;
+}
+footer a img{
+    width: 20px;
+    height: 20px;
+    margin:0 auto;
+}
+footer a span{
+    display: inline-block;
+    font-size: 12px;
+    color: #999999;
+    padding-top: 2px;
+}
